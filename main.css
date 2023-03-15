@@ -44,12 +44,10 @@ nav .menu {
   display: none;
 }
 nav .menu .bars {
-  padding: 3px 15px;
-  background-color: white;
+  padding: 2px 15px;
   margin: 3px;
-}
-nav .menu .bars:nth-child(2) {
-  padding: 3px 5px;
+  background-color: white;
+  transition: 0.5s ease;
 }
 
 .home {
@@ -92,6 +90,18 @@ nav .menu .bars:nth-child(2) {
   }
   nav .menu {
     display: flex;
+  }
+  nav .menu .bars:nth-child(2) {
+    background-color: red;
+  }
+  nav .menu.active .bars:nth-child(2) {
+    opacity: 0;
+  }
+  nav .menu.active .bars:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  nav .menu.active .bars:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
   }
   nav .navbar-links {
     width: 100%;
