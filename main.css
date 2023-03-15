@@ -84,6 +84,9 @@ nav .menu .bars {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    margin: 0;
+  }
   nav {
     flex-direction: column;
     align-items: flex-start;
